@@ -14,6 +14,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/posts', function (Request $request) {
+//     // dd($request);
+//     // dd($request->query());
+//     return response()->json([
+//         'posts' => [
+//             [
+//                 'title' => 'post One'
+//             ],
+//             [
+//                 'title' => 'post Two'
+//             ]
+//         ]
+//     ]);
+// });
+
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
